@@ -1,0 +1,11 @@
+{
+	"name": "iterm-color-converter",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"watch": "webpack --watch --config webpack.dev.js",
+		"start": "webpack serve --open --config webpack.dev.js",
+		"build": "webpack --config webpack.prod.js"
+	},
+	"license": "MIT"
+}

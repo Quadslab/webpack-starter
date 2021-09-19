@@ -1,0 +1,1 @@
+yarn add -D webpack @types/webpack webpack-cli webpack-dev-server webpack-merge html-webpack-plugin workbox-webpack-plugin mini-css-extract-plugin style-loader css-loader sass sass-loader typescript ts-loader three @types/three
