@@ -120,3 +120,4 @@ dist
 # package lock files
 yarn.lock
 package-lock.json
+dist/
