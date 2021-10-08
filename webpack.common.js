@@ -1,20 +1,13 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const templateLoader =
-	process.env.npm_package_config_template_loader;
+
 /** @type {import('webpack').Configuration} */
 module.exports = {
 	entry: {
 		index: "./src/index.ts",
 	},
 	plugins: [
-		new HtmlWebpackPlugin({
-			title: process.env.npm_package_config_title,
-			template:
-				(typeof templateLoader === "string"
-					? `!!${templateLoader}!`
-					: "") + "src/index.html",
-		}),
+		new HtmlWebpackPlugin(require("./htmlWebpackOptions")),
 	],
 	output: {
 		filename: "[name].[contenthash].js",

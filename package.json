@@ -8,10 +8,6 @@
 		"build": "webpack --config webpack.prod.js"
 	},
 	"license": "MIT",
-	"config": {
-		"title": "Webpack Starter",
-		"template_loader": "handlebars-loader"
-	},
 	"devDependencies": {
 		"@types/webpack": "^5.28.0",
 		"css-loader": "^6.3.0",
